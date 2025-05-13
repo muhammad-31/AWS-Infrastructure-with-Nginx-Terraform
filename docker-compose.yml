@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app1:
+    build: ./app
+    ports:
+      - "8001:8000"
+    restart: always
+
+  app2:
+    build: ./app
+    ports:
+      - "8002:8000"
+    restart: always
+
+  app3:
+    build: ./app
+    ports:
+      - "8003:8000"
+    restart: always
